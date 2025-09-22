@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  background-color: #1e1e1e;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Fira Code", monospace;
+}
+
+.terminal-container {
+  width: 90%;
+  height: 75vh;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  padding: 15px;
+  background-color: #000000;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+  text-align: left;
+  white-space: pre-wrap;
+  border: 2px solid #00ff00;
+}
+
+.terminal-line {
+  line-height: 1.4;
+}
+
+/* Input form at bottom like real terminal */
+.terminal-input-form {
+  width: 90%;
+  display: flex;
+  margin-top: 5px;
+  font-family: "Fira Code", monospace;
+  color: #00ff00;
+}
+
+.terminal-input-form span {
+  margin-right: 5px;
+}
+
+/* Input field */
+.terminal-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+  caret-color: #00ff00; /* cursor color */
+  animation: blink-caret 1s step-start infinite; /* blink cursor */
+}
+
+/* hanya cursor yang kedip, teks normal tetap stabil */
+@keyframes blink-caret {
+  50% {
+    border-right-color: transparent;
+  }
+}

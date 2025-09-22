@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: ./fe
+    ports:
+      - "3333:3000" # frontend container tetap 3000, tapi host 3333
+    depends_on:
+      - backend
+
+  backend:
+    build: ./be
+    ports:
+      - "9090:8080" # backend container tetap 8080, host 9090
