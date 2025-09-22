@@ -1,5 +1,5 @@
 # Base image Bun/Node
-FROM jarredsumner/bun:latest
+FROM oven/bun
 
 # Set working directory
 WORKDIR /app
