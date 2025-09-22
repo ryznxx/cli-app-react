@@ -5,7 +5,7 @@ FROM oven/bun
 WORKDIR /app
 
 # Copy dependency files dulu supaya caching layer optimal
-COPY package.json bun.lockb ./
+COPY package.json ./
 
 # Install dependencies
 RUN bun install
