@@ -9,7 +9,7 @@ export default function App() {
 
   // Connect ke backend WebSocket
   useEffect(() => {
-    wsRef.current = new WebSocket("ws://cli-app-react-backend:8080/ws");
+    wsRef.current = new WebSocket("ws://localhost:9090/ws");
 
     wsRef.current.onopen = () => {
       setLines((prev) => [...prev, "Connected to backend"]);
